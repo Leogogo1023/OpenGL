@@ -1,7 +1,7 @@
 # OpenGL
-Support mesh and bezier surface rendering
+This the a half-semester project on COMS 4160 Computer Graphics, and is divided into four parts:
 
-This the a half-semester project on COMS 4160 Computer Graphics, and is divided into four parts.
+
 
 Part1: simple VBO & file load & openGL turntable
 
@@ -27,7 +27,9 @@ Note that in this implementation, it is assumed that your OBJ model fits into a 
 You should base your code off the example for rotating a triangle: that example calculates colors in the CPU code, and has minimal vertex and fragment shaders - these are flat shaders which will allow you to see the detail in your model. You do not need to write shaders in this assignment.
 
 
-part 2: transformations and more opengl
+
+
+Part 2: transformations and more opengl
 
 This assignment was locked Apr 24 at 11:59pm.
 For this assignment, you will extend your glrender program to include a simple camera control that will let you position and aim a perspective camera, and add in basic blinn/phong lighting at the vertices. All of these computations should be done in the vertex shader.
@@ -56,8 +58,9 @@ if triangle i has vertex j, add tri_norms[i] to vert_nroms[j]
 4. when done, normalize all the vert_norms.
 
 
-part3: Bezier Surfaces
 
+
+Part3: Bezier Surfaces
 In this assignment, you will extend your current glrender program to allow for more complex geometry.
 
 
@@ -86,13 +89,13 @@ _
 0.0 1.0 0.0 0.0 1.0 1.0 0.0 1.0 2.0 0.0 1.0 3.0
 1.0 0.0 0.0 1.0 0.0 1.0 1.0 0.0 2.0 1.0 0.0 3.0
 
-
 Program Name & Arguments
 
 Your program should still be called glrender : it should take 1 argument - the name of a scene file (which will contain 1 or more bezier surface in the above format.).
 
 
-part4: fragment shaders
+
+Part4: fragment shaders
 
 For your final assignment, you will implement blinn/phong shading in a fragment shader.
 
